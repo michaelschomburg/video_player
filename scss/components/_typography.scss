@@ -1,0 +1,27 @@
+// =========================================
+//  Typography
+// =========================================
+
+.headline {
+  @include m(primary) {
+    color: $color-primary;
+    padding-left: em(10px);
+  }
+  @include m(secondary) {
+    @include text($weight: $font-weight--thin, $color: $color-text--light);
+    margin-top: em(70px);
+  }
+}
+
+.link {
+  @extend %link;
+}
+
+.blockquote {
+  @include text($size: em(28px), $weight: $font-weight--thin, $l-height: 36px );
+  font-style: italic;
+  border-left: 10px solid $color-primary;
+  border-radius: $border-rd;
+  padding-left: em(20px);
+  margin: 0.8em;
+}

@@ -1,0 +1,71 @@
+// ======================================
+//  Variables
+// ======================================
+
+
+// Colors
+
+$white: white;
+$color-primary: #5fe0c1;
+$color-secondary: #55defb;
+$color-text: rgb(136, 136, 136);
+$color-text--light: lighten(rgb(136, 136, 136), 25%);
+
+// button colors
+$button-colors: (
+  default: $color-secondary,
+  success: #67cb84,
+  error: #e2767c,
+  warning: #fb785b,
+  info: #927dbf
+);
+
+
+
+// grid colors
+$grid-colors: (
+  3: #D59EE9,
+  4: #6EE1FC,
+  5: #79D48F,
+  6: #359BBE,
+  7: #E58B92,
+  8: #FA8B72,
+  12:#70e4c6
+);
+
+
+// Font Stacks
+$font-url--google: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900";
+$font-family--primary:  'Helvetica Neue' ,Helvetica, Arial, sans-serif;
+$font-family--secondary  :'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+// Text
+
+$base__font-size : 18px;
+$base__line: 26px;
+$letter-space: 1px;
+
+// Breakpoints
+$brkpoint-sm: 1px;
+$brkpoint-md: 768px;
+$brkpoint-lg: 1024px;
+
+// border
+$border-rd: 6px;
+
+
+// Grid
+
+$g-col-width    : 75px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 100%;

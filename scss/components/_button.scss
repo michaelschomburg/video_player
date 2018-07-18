@@ -1,0 +1,15 @@
+// =========================================
+//  Buttons
+// =========================================
+
+.btn {
+  @each $item , $color in $button-colors {
+    @include m(#{$item}) {
+      @extend %btn;
+      background-color: $color;
+      @include mq(large) {
+        margin-right: em(20px);
+      }
+      }
+    }
+}

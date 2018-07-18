@@ -1,0 +1,22 @@
+// =========================================
+//  Images
+// =========================================
+
+
+.img {
+  @include m(logo) {
+    @extend %center;
+    width: 100%;
+    max-width: 199px;
+  }
+  @include m(frame) {
+    @extend %center;
+    width: 100%;
+    padding: em(15px);
+    border: 1px solid $color-text;
+  }
+  @include m(avatar) {
+    @extend %center;
+    padding-top: em(35px)
+  }
+}

@@ -1,0 +1,89 @@
+// =========================================
+//  Mixins
+// =========================================
+
+// Flexbox
+
+@mixin flexy($disp: flex , $dir: null, $wrap: null, $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+//Media queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    @content;
+    }
+  }
+ @else if $break == "medium" {
+    @media (min-width: $brkpoint-md + 1){
+    @content;
+    }
+  }
+ @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+    @content;
+    }
+  }
+  @else {
+    @error "This is not a correct breakpoint please use one of the given Breakpoints`#{$break}` "
+  }
+};
+
+// BEM selectors
+
+@mixin e($element) {
+	&__#{$element} {
+    @content;
+  }
+};
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+
+
+// Grid mixin
+
+@mixin g-columns {
+  @for $i from 1 through $g-col-count {
+
+  $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+  $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+
+  // Generate column modifier classes
+  &--#{$i} {
+    width: percentage($target / $context);
+    display: flex;
+    }
+  }
+}
+
+
+// text format mixin
+
+@mixin text($size: $base__font-size, $weight: null, $l-height: $base__line, $color: $color-text) {
+  color: $color;
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+}
+
+
+// grid colors
+@mixin grid-color() {
+  @each $theme, $color in $grid-colors{
+      &--#{$theme}.theme__colors {
+      background-color: $color;
+      color: $color-text;
+      padding: em(15px);
+      border-radius: $border-rd;
+      }
+    }
+}
