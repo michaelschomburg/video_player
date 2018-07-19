@@ -74,16 +74,3 @@
   line-height: $l-height;
   font-weight: $weight;
 }
-
-
-// grid colors
-@mixin grid-color() {
-  @each $theme, $color in $grid-colors{
-      &--#{$theme}.theme__colors {
-      background-color: $color;
-      color: $color-text;
-      padding: em(15px);
-      border-radius: $border-rd;
-      }
-    }
-}

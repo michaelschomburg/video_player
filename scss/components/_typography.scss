@@ -16,12 +16,3 @@
 .link {
   @extend %link;
 }
-
-.blockquote {
-  @include text($size: em(28px), $weight: $font-weight--thin, $l-height: 36px );
-  font-style: italic;
-  border-left: 10px solid $color-primary;
-  border-radius: $border-rd;
-  padding-left: em(20px);
-  margin: 0.8em;
-}

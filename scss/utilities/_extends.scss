@@ -35,36 +35,10 @@ display: block;
 }
 
 
-%nav {
-    text-align: center;
-    list-style-type: none;
-    padding: em(20px) 0;
-    a{
-      color: $color-text;
-      text-decoration: none;
-      font-size: em(20px);
-      font-weight: 100;
-    }
-    &:hover > a {
-      color: white;
-    }
-    &:hover  {
-    border-radius: $border-rd;
-    background-color: $color-primary;
-  }
-}
+
 
 %link {
   text-decoration: none;
-  color: $color-secondary;
+  color: $color-highlight;
   font-weight: 500;
-}
-
-%btn {
-  color: $white;
-  text-transform: uppercase;
-  border-radius: $border-rd;
-  width: 100%;
-  padding: em(13px) 0;
-  margin-top: em(25px);
 }

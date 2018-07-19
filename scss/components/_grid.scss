@@ -9,23 +9,23 @@
   margin: 0 auto;
 }
 
-.grid{
-  @include e(row) {
-    @include flexy($dir: column, $just: center);
-    margin: em(30px) 0px;
-    @include mq(medium) {
-      @include flexy($dir: row, $just:space-between);
-
-    }
-  }
-  @include e(col) {
-    margin-bottom: em(50px);
-    @include grid-color();
-      @include mq(large) {
-        @include g-columns();
-      }
-    }
-}
+// .grid{
+//   @include e(row) {
+//     @include flexy($dir: column, $just: center);
+//     margin: em(30px) 0px;
+//     @include mq(medium) {
+//       @include flexy($dir: row, $just:space-between);
+//
+//     }
+//   }
+//   @include e(col) {
+//     margin-bottom: em(50px);
+//     @include grid-color();
+//       @include mq(large) {
+//         @include g-columns();
+//       }
+//     }
+// }
 
 [class^="grid__col--"]{
   float: left;

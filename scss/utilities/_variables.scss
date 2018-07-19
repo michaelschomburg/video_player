@@ -6,32 +6,9 @@
 // Colors
 
 $white: white;
-$color-primary: #5fe0c1;
-$color-secondary: #55defb;
-$color-text: rgb(136, 136, 136);
+$color-primary: rgb(136, 136, 136);
 $color-text--light: lighten(rgb(136, 136, 136), 25%);
-
-// button colors
-$button-colors: (
-  default: $color-secondary,
-  success: #67cb84,
-  error: #e2767c,
-  warning: #fb785b,
-  info: #927dbf
-);
-
-
-
-// grid colors
-$grid-colors: (
-  3: #D59EE9,
-  4: #6EE1FC,
-  5: #79D48F,
-  6: #359BBE,
-  7: #E58B92,
-  8: #FA8B72,
-  12:#70e4c6
-);
+$color-highlight: rgb(235, 195, 94);
 
 
 // Font Stacks
