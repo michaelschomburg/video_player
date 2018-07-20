@@ -30,8 +30,7 @@ player.addEventListener('timeupdate', () => {
         console.log(player.currentTime)
   });
 
-// Change the inline style of the durationindicatio, was originally black
+// Tried to change the color of the duration / did not work yet
 
 const duration = document.querySelector('.mejs__duration');
-
 duration.style.cssText = "color:white";
