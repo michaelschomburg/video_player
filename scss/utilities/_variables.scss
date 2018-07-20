@@ -8,7 +8,7 @@
 $white: white;
 $color-primary: rgb(136, 136, 136);
 $color-text--light: lighten(rgb(136, 136, 136), 25%);
-$color-highlight: rgb(235, 195, 94);
+$color-highlight: #4BC47F;
 
 
 // Font Stacks
@@ -28,21 +28,10 @@ $font-weight--ultra-bold : 900;
 // Text
 
 $base__font-size : 18px;
-$base__line: 26px;
+$base__line: 35px;
 $letter-space: 1px;
 
 // Breakpoints
 $brkpoint-sm: 1px;
 $brkpoint-md: 768px;
 $brkpoint-lg: 1024px;
-
-// border
-$border-rd: 6px;
-
-
-// Grid
-
-$g-col-width    : 75px;
-$g-gutter-width : 20px;
-$g-col-count    : 12;
-$g-cont-max-w   : 100%;

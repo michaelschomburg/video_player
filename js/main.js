@@ -1,8 +1,8 @@
 
 //load media player
 
-$('#player').mediaelementplayer({
-  features: ['playpause','progress','duration', 'tracks', 'volume', 'fullscreen']
+$('video').mediaelementplayer({
+  features: ['playpause', 'progress','duration', 'tracks', 'volume', 'fullscreen'],
 });
 
 // The transcript text get its highlight color here
@@ -15,7 +15,7 @@ const textContainer = document.querySelector('.text-container');
 player.addEventListener('timeupdate', () => {
   for (let i = 0; i < text.length; i++) {
     if (text[i].dataset.start < player.currentTime && player.currentTime < text[i].dataset.end) {
-      text[i].style.color = 'red'
+      text[i].style.color = '#4BC47F'
       }
       else {
         text[i].style.color = 'black'
@@ -29,3 +29,9 @@ player.addEventListener('timeupdate', () => {
     player.currentTime = e.target.getAttribute('data-start');
         console.log(player.currentTime)
   });
+
+// Change the inline style of the durationindicatio, was originally black
+
+const duration = document.querySelector('.mejs__duration');
+
+duration.style.cssText = "color:white";

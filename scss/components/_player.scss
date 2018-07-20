@@ -1,22 +1,19 @@
 // =========================================
-//  Images
+//  player
 // =========================================
+.video-container {
+  @include mq(medium) {
+    margin-top: em(30px);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mejs__controls {
+  background-color: $color-highlight;
 
+  }
 
-// .img {
-//   @include m(logo) {
-//     @extend %center;
-//     width: 100%;
-//     max-width: 199px;
-//   }
-//   @include m(frame) {
-//     @extend %center;
-//     width: 100%;
-//     padding: em(15px);
-//     border: 1px solid $color-text;
-//   }
-//   @include m(avatar) {
-//     @extend %center;
-//     padding-top: em(35px)
-//   }
-// }
+  .mejs__duration {
+    color: white !important; 
+  }
+}

@@ -2,17 +2,16 @@
 //  Typography
 // =========================================
 
-.headline {
-  @include m(primary) {
-    color: $color-primary;
-    padding-left: em(10px);
+.text-container {
+@include mq(small) {
+    margin-left: em(25px);
+    margin-right: em(25px);
+    margin-top: em(35px);
   }
-  @include m(secondary) {
-    @include text($weight: $font-weight--thin, $color: $color-text--light);
-    margin-top: em(70px);
+@include mq(medium) {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   }
-}
-
-.link {
-  @extend %link;
+@include text();
 }
